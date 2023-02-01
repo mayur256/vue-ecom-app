@@ -6058,6 +6058,11 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+mdb-vue-ui-kit@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/mdb-vue-ui-kit/-/mdb-vue-ui-kit-3.2.0.tgz#33df568ef345e5dc33e8484ab0368ad1a55bcb58"
+  integrity sha512-gQdwML1zkN8V0ET+auqTc7e5N8Dqx10UuNC4ZxUPL7PhxUgbojPiHudZkFm/1iGsO7ODfPESykMDBhGdWs7UBQ==
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
