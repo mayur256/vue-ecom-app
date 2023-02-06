@@ -4,19 +4,19 @@ import { MDBCarousel } from "mdb-vue-ui-kit";
 
 const items1 = [
     {
-        src: "https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp",
+        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg",
         alt: "...",
         label: "First slide label",
         caption: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-        src: "https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp",
+        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg",
         alt: "...",
         label: "Second slide label",
         caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-        src: "https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp",
+        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg",
         alt: "...",
         label: "Third slide label",
         caption:
@@ -28,7 +28,23 @@ const carousel1 = ref(0);
 </script>
 
 <template>
-    <MDBCarousel v-model="carousel1" :items="items1" fade />
+    <MDBCarousel
+        v-model="carousel1"
+        :items="items1"
+        fade
+    />
 </template>
 
-<style></style>
+<style lang="scss">
+.carousel-inner {
+    max-height: 400px;
+
+    img {
+        max-height: 400px;
+    }
+}
+
+.carousel-indicators img {
+    max-width: 100px;
+}
+</style>
