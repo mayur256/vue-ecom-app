@@ -3,7 +3,6 @@ import {
     MDBCard,
     MDBCardBody,
     MDBCardTitle,
-    MDBCardLink,
     MDBCardImg,
 MDBCardText
 } from "mdb-vue-ui-kit";
@@ -29,17 +28,11 @@ const props = defineProps<IProps>();
         </div>
 
         <MDBCardBody>
-            <MDBCardLink>
-                <MDBCardTitle>Product Name</MDBCardTitle>
-            </MDBCardLink>
+            <MDBCardTitle>Product</MDBCardTitle>
 
-            <MDBCardLink class="text-reset">
-                <MDBCardText>Category</MDBCardText>
-            </MDBCardLink>
+            <MDBCardText>Category</MDBCardText>
 
-            <MDBCardLink class="text-reset">
-                <h5 class="price fs-900" :style="{fontWeight: 'bold'}">139$</h5>
-            </MDBCardLink>
+            <h5 class="price fs-900" :style="{fontWeight: 'bold'}">139$</h5>
         </MDBCardBody>
     </MDBCard>
 </template>

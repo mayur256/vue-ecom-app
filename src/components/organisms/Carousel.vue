@@ -10,13 +10,13 @@ const items1 = [
         caption: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg",
+        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%283%29.jpg",
         alt: "...",
         label: "Second slide label",
         caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg",
+        src: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg",
         alt: "...",
         label: "Third slide label",
         caption:

@@ -4,6 +4,7 @@
 import Card from "@/components/molecules/Card.vue";
 import Carousel from "@/components/organisms/Carousel.vue";
 import Navbar from "@/components/organisms/Navbar.vue";
+import Footer from "@/components/organisms/Footer.vue";
 
 </script>
 
@@ -24,6 +25,8 @@ import Navbar from "@/components/organisms/Navbar.vue";
             </div>
         </div>
     </div>
+
+    <Footer />
 </template>
 
 <style>
