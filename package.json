@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "mdb-vue-ui-kit": "^3.2.0",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
