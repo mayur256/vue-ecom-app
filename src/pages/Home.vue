@@ -4,6 +4,7 @@
 import Card from "@/components/molecules/Card.vue";
 import AppLayout from "@/AppLayout.vue";
 import Carousel from "@/components/organisms/Carousel.vue";
+import Pagination from "@/components/molecules/Pagination.vue";
 
 </script>
 
@@ -19,6 +20,10 @@ import Carousel from "@/components/organisms/Carousel.vue";
                 </div>
             </div>
         </div>
+
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+            <Pagination />
+        </nav>
     </AppLayout>
 </template>
 

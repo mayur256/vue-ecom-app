@@ -22,9 +22,15 @@ const collapse7 = ref(true);
         <MDBNavbarToggler target="#navbarColor01" @click="collapse7 = !collapse7"></MDBNavbarToggler>
         <MDBCollapse id="navbarColor01" v-model="collapse7">
             <MDBNavbarNav class="mb-2 mb-lg-0">
-                <MDBNavbarItem href="/" linkClass="link-secondary">Home</MDBNavbarItem>
-                <MDBNavbarItem href="/product" linkClass="link-secondary">Product</MDBNavbarItem>
-                <MDBNavbarItem href="/checkout" linkClass="link-secondary">Checkout</MDBNavbarItem>
+                <router-link to="/">
+                    <MDBNavbarItem linkClass="link-secondary" class="text-white me-2">Home</MDBNavbarItem>
+                </router-link>
+                <router-link to="/product">
+                    <MDBNavbarItem linkClass="link-secondary" class="text-white me-2">Product</MDBNavbarItem>
+                </router-link>
+                <router-link to="/checkout">
+                    <MDBNavbarItem linkClass="link-secondary" class="text-white me-2">Checkout</MDBNavbarItem>
+                </router-link>
             </MDBNavbarNav>
         </MDBCollapse>
     
