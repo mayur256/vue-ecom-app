@@ -3,7 +3,11 @@ import {
     MDBContainer,
     MDBRow,
     MDBCol,
-    MDBCard
+    MDBCard,
+    MDBInput,
+    MDBTextarea,
+    MDBCheckbox,
+    MDBRadio,
 } from 'mdb-vue-ui-kit';
 </script>
 <template>
@@ -22,172 +26,143 @@ import {
                         <!--Grid column-->
                         <MDBCol md="6" class="mb-2">
                             <!--firstName-->
-                            <div class="form-outline">
-                                <input type="text" id="typeText" class="form-control" />
-                                <label class="form-label" for="typeText">First name</label>
-                            </div>
+                            <MDBInput
+                                label="First name"
+                                invalidFeedback="Please provide your first name"
+                                validFeedback="Looks good!"
+                                required
+                            />
                         </MDBCol>
                         <!--Grid column-->
     
                         <!--Grid column-->
                         <MDBCol md="6" class="mb-2">
                             <!--lastName-->
-                            <div class="form-outline">
-                                <input type="text" id="typeText" class="form-control" />
-                                <label class="form-label" for="typeText">Last name</label>
-                            </div>
+                           <MDBInput
+                                label="Last name"
+                                invalidFeedback="Please provide your last name"
+                                validFeedback="Looks good!"
+                                required
+                            />
                         </MDBCol>
                         <!--Grid column-->
                     </MDBRow>
                     <!--Grid row-->
     
-                    <!--Username-->
-                    <div class="input-group mb-4">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                            aria-describedby="basic-addon1" />
-                    </div>
-    
-                    <!--email-->
-                    <p class="mb-0">
-                        Email (optional)
-                    </p>
-                    <div class="form-outline mb-4">
-                        <input type="email" class="form-control" placeholder="youremail@example.com"
-                            aria-label="youremail@example.com" aria-describedby="basic-addon1" />
-                    </div>
-    
                     <!--address-->
-                    <p class="mb-0">
-                        Address
-                    </p>
                     <div class="form-outline mb-4">
-                        <input type="email" class="form-control" placeholder="1234 Main St" aria-label="1234 Main St"
-                            aria-describedby="basic-addon1" />
+                        <MDBTextarea
+                            label="Address"
+                            rows="2"
+                            required
+                            invalidFeedback="Please enter address"
+                        />
                     </div>
     
-                    <!--address-2-->
-                    <p class="mb-0">
-                        Address 2 (optional)
-                    </p>
-                    <div class="form-outline mb-4">
-                        <input type="email" class="form-control" placeholder="Apartment or suite"
-                            aria-label="Apartment or suite" aria-describedby="basic-addon1" />
-                    </div>
+                    <MDBRow>
+                        <MDBCol md="12" lg="4" class="mb-4">
+                            <MDBInput
+                                label="Country"
+                                invalidFeedback="Please enter country"
+                                validFeedback="Looks good!"
+                                required
+                            />
+                        </MDBCol>
     
-                    <!--Grid row-->
-                    <div class="row">
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <p class="mb-0">
-                                Country
-                            </p>
-                            <div class="form-outline mb-4">
-                                <input type="email" class="form-control" placeholder="United States"
-                                    aria-label="United States" aria-describedby="basic-addon1" />
-                            </div>
-                        </div>
-                        <!--Grid column-->
+                        <MDBCol md="12" lg="4" class="mb-4">
+                            <MDBInput
+                                label="State"
+                                invalidFeedback="Please enter state"
+                                validFeedback="Looks good!"
+                                required
+                            />
+                        </MDBCol>
     
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <p class="mb-0">
-                                State
-                            </p>
-                            <div class="form-outline mb-4">
-                                <input type="email" class="form-control" placeholder="California" aria-label="California"
-                                    aria-describedby="basic-addon1" />
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <p class="mb-0">
-                                Zip
-                            </p>
-                            <div class="form-outline">
-                                <input type="text" class="form-control" />
-                            </div>
-                        </div>
-                        <!--Grid column-->
-                    </div>
+                        <MDBCol md="12" lg="4" class="mb-4">
+                            <MDBInput
+                                type="number"
+                                label="Zip"
+                                invalidFeedback="Please enter country"
+                                validFeedback="Looks good!"
+                                required
+                            />
+                        </MDBCol>
+                    </MDBRow>
                     <!--Grid row-->
     
                     <hr />
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <label class="form-check-label" for="flexCheckDefault">Shipping address is the same as my billing
-                            address</label>
-                    </div>
-    
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <label class="form-check-label" for="flexCheckDefault">Save this information for next time</label>
-                    </div>
-    
+                    <MDBCheckbox
+                        label="Shipping address is the same as my billing address"
+                        invalidFeedback="Example invalid feedback text"
+                        validFeedback="Looks good!"
+                        required
+                        wrapperClass="mb-3"
+                    />
+
+                    <MDBCheckbox
+                        label="Save this information for next time"
+                        invalidFeedback="Example invalid feedback text"
+                        validFeedback="Looks good!"
+                        required
+                        wrapperClass="mb-3"
+                    />
+                
                     <hr />
     
                     <div class="my-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
-                                checked />
-                            <label class="form-check-label" for="flexRadioDefault1"> Credit card </label>
-                        </div>
-    
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                            <label class="form-check-label" for="flexRadioDefault2"> Debit card </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
-                            <label class="form-check-label" for="flexRadioDefault3"> Paypal </label>
-                        </div>
+                        <MDBRadio
+                            v-for="item in ['Credit Card', 'Debit Card', 'Paypal']"
+                            :label="item"
+                            name="payment_methods"
+                            :value="item"
+                            required
+                            invalidFeedback="More example invalid feedback text"
+                            wrapperClass="mb-2"
+                        />
                     </div>
 
                     <MDBRow class="mb-3">
 
                         <MDBCol md="6" class="mb-3">
-                            <p class="mb-0">
-                                Name on card
-                            </p>
-                            <div class="form-outline">
-                                <input type="text" class="form-control" />
-                                <div class="form-helper">Full name as displayed on card</div>
-                            </div>
+                            <MDBInput
+                                label="Name on card"
+                                invalidFeedback="Please enter name on the card"
+                                validFeedback="Looks good!"
+                                required
+                            />
                         </MDBCol>
                         <MDBCol md="6" class="mb-3">
-                            <p class="mb-0">
-                                Credit card number
-                            </p>
-                            <div class="form-outline">
-                                <input type="text" class="form-control" />
-                            </div>
+                            <MDBInput
+                                label="Credit card number"
+                                invalidFeedback="Please enter card number"
+                                validFeedback="Looks good!"
+                                required
+                            />
                         </MDBCol>
 
                     </MDBRow>
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <p class="mb-0">
-                                Expiration
-                            </p>
-                            <div class="form-outline">
-                                <input type="text" class="form-control" />
-    
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <p class="mb-0">
-                                CVV
-                            </p>
-                            <div class="form-outline">
-                                <input type="text" class="form-control" />
-    
-                            </div>
-                        </div>
-                    </div>
+
+                    <MDBRow>
+                        <MDBCol md="3" class="mb-3">
+                            <MDBInput
+                                label="Expiration"
+                                invalidFeedback="Card expiration date cannot be empty"
+                                validFeedback="Looks good!"
+                                required
+                            />
+                        </MDBCol>
+                        <MDBCol md="3" class="mb-3">
+                            <MDBInput
+                                label="CVV"
+                                invalidFeedback="Card expiration date cannot be empty"
+                                validFeedback="Looks good!"
+                                required
+                            />
+                        </MDBCol>
+                    </MDBRow>
                     <hr class="mb-4" />
-                    <button class="btn btn-primary" type="button">Continue to checkout</button>
+                    <MDBBtn color="primary" type="submit"> Continue to checkout </MDBBtn>
+
                 </MDBCard>
                 <!--/.Card-->
            </MDBCol>
