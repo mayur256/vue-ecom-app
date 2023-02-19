@@ -8,7 +8,7 @@ import {
 </script>
 
 <template>
-    <MDBFooter bg="dark" :text="['center', 'white']">
+    <MDBFooter bg="dark" :text="['center', 'white']" class="fixed-bottom">
         <!-- Grid container -->
         <MDBContainer class="p-4 pb-0">
             <!-- Section: Social media -->
