@@ -15,7 +15,12 @@ import Pagination from "@/components/molecules/Pagination.vue";
             <div class="text-center">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <Card image="/denim_shirt.jpg" title="Text" />
+                        <Card
+                            category="Apparel"
+                            :price="200"
+                            image="/denim_shirt.jpg"
+                            title="Denim Shirt"
+                        />
                     </div>
                 </div>
             </div>

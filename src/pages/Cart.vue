@@ -154,7 +154,7 @@ const cart: Array<any> = [
                         <MDBCard class="mb-4">
                             <MDBCardHeader class="text-center">
                                 <MDBCardTitle>
-                                    <strong>Cart is empty</strong>
+                                    <strong>Your cart is empty!!</strong>
                                 </MDBCardTitle>
                             </MDBCardHeader>
 

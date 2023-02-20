@@ -10,6 +10,8 @@ MDBCardText
 
 interface IProps {
     title: string;
+    category: string;
+    price: number;
     image: string;
 }
 
@@ -23,16 +25,16 @@ const props = defineProps<IProps>();
             <MDBCardImg
                 top
                 :src="props.image"
-                :alt="title"
+                :alt="props.title"
             />
         </div>
 
         <MDBCardBody>
-            <MDBCardTitle>Product</MDBCardTitle>
+            <MDBCardTitle>{{ props.title ?? 'Product Title' }}</MDBCardTitle>
 
-            <MDBCardText>Category</MDBCardText>
+            <MDBCardText>{{ props.category ?? 'Category' }}</MDBCardText>
 
-            <h5 class="price fs-900" :style="{fontWeight: 'bold'}">139$</h5>
+            <h5 class="price fs-900" :style="{fontWeight: 'bold'}">{{ props.price }}$</h5>
         </MDBCardBody>
     </MDBCard>
 </template>
