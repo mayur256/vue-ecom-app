@@ -16,9 +16,9 @@ const form1LoginCheck = ref(true);
 <template>
     <MDBContainer class="mt-4 mx-auto">
         <MDBRow>
-            <MDBCol md="3"></MDBCol>
-            <MDBCol md="6">
-                <h3 class="text-center mb-1">Login</h3>
+            <MDBCol md="4"></MDBCol>
+            <MDBCol md="4">
+                <h3 class="text-center mb-4">Login</h3>
                 <form>
                     <!-- Email input -->
                     <MDBInput type="email" label="Email address" id="form1Email" v-model="form1Email" wrapperClass="mb-4" />
@@ -41,7 +41,7 @@ const form1LoginCheck = ref(true);
                     <MDBBtn color="primary" block> Sign in </MDBBtn>
                 </form>
             </MDBCol>
-            <MDBCol md="3"></MDBCol>
+            <MDBCol md="4"></MDBCol>
         </MDBRow>
     </MDBContainer>
 </template>
