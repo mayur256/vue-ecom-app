@@ -17,7 +17,11 @@
         "@/*": [
             "src/*"
         ]
-    }
+    },
+    "types": [
+        "vite/client", // if using vite
+        // ...
+    ]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
